@@ -1,16 +1,8 @@
 """
 Code for compressing and decompressing using Huffman compression.
-
-=====================
-Assignment #2
-CSC148H1 S
-Raymond Truong
-Saksham Ahluwalia
-Muneeb Ansari
-=====================
 """
 
-from nodes import HuffmanNode, ReadNode
+from nodes import HuffmanNode, ReadNode 
 
 
 class Forest:
@@ -408,8 +400,8 @@ def generate_tree_general(node_lst, root_index):
     ReadNode(1, 1, 1, 0)]
     >>> generate_tree_general(lst, 2)
     HuffmanNode(None, HuffmanNode(None, HuffmanNode(10, None, None), \
-HuffmanNode(12, None, None)), \
-HuffmanNode(None, HuffmanNode(5, None, None), HuffmanNode(7, None, None)))
+    HuffmanNode(12, None, None)), \
+    HuffmanNode(None, HuffmanNode(5, None, None), HuffmanNode(7, None, None)))
     """
     # the root of this Huffman tree is defined by the read node at root_index
     read_node, huffman_node = node_lst[root_index], HuffmanNode()
@@ -449,8 +441,8 @@ def generate_tree_postorder(node_lst, root_index):
     ReadNode(1, 0, 1, 0)]
     >>> generate_tree_postorder(lst, 2)
     HuffmanNode(None, HuffmanNode(None, HuffmanNode(5, None, None), \
-HuffmanNode(7, None, None)), \
-HuffmanNode(None, HuffmanNode(10, None, None), HuffmanNode(12, None, None)))
+    HuffmanNode(7, None, None)), \
+    HuffmanNode(None, HuffmanNode(10, None, None), HuffmanNode(12, None, None)))
     """
     return recreate_tree(node_lst, root_index)[0]
 
@@ -669,8 +661,8 @@ def recreate_tree(node_lst, root_index):
     ReadNode(1, 0, 1, 0)]
     >>> recreate_tree(lst, 2)[0]
     HuffmanNode(None, HuffmanNode(None, HuffmanNode(5, None, None), \
-HuffmanNode(7, None, None)), \
-HuffmanNode(None, HuffmanNode(10, None, None), HuffmanNode(12, None, None)))
+    HuffmanNode(7, None, None)), \
+    HuffmanNode(None, HuffmanNode(10, None, None), HuffmanNode(12, None, None)))
     """
     # the root of this Huffman tree is defined by the read node at root_index
     read_node, huffman_node = node_lst[root_index], HuffmanNode()
