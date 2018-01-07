@@ -17,7 +17,7 @@ You can install python by visiting their official website listed below.
 https://www.python.org/downloads/
 ```
 
-### Compression/Uncompression
+### How to run
 
 Open up the terminal in the directory where, "Huffman.py" is located and type the following command.
 ```
